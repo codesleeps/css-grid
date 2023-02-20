@@ -1,0 +1,88 @@
+/* Made for learning grid styles in CSS to show responsive design, although i think when it goes down to small screen media queries would be better suited as squeezing some content to small will make it unreadable.... */
+
+
+body {
+    background-color: #5277df;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ /* OUTER CONTAINER IS THE PARENT  */
+.container{
+    width: 100%;
+    display: grid;
+    /* 1FR FILLS REMAINING SPACE SO 1FR FILLS WHOLE LINE IF 2 50/50 AND SO ON.... */
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+}
+/* IF YOU ADD MORE 1FR's REMEMBER TO UPDATE HTML WITH MORE DIV IS OBVIOUS BUT I DO REMEMBER FORGETTING ONE TIME  */
+
+   /* ITEM IS THE CHILD OF THE CONTAINER  */
+.item {
+    background-color: #1EAAFC;
+    /* LINEAR GRADIENT ONE OF THE EASIEST EFFECTS IN CSS I LOVE IT YOU CAN PUT AS MANY COLORS AS YOU LIKE */
+    background-image: linear-gradient(130deg, #c3d952 0%, #1efcc4 85%, #3EDFD7 100%);
+    /* BOX SHADOW THIS ONE I HAVE TO PLAY AROUND WITH VISUALLY (SHADOWS WORK BEST ON SOME COLORS)ANOTHER EASY EFFECT IN CSS  */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #fff;
+    border-radius: 4px;
+    border: 3px solid #e6b44f;
+  }
+
+  .item1 {
+    color: rgb(236, 241, 235);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+    
+  }
+  .item2 {
+    color: rgb(118, 37, 217);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .item3 {
+    color: rgb(217, 97, 37);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .item4 {
+    color: rgb(217, 37, 112);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .item5 {
+    color: rgb(1, 106, 244);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .item6 {
+    color: rgb(30, 28, 32);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
